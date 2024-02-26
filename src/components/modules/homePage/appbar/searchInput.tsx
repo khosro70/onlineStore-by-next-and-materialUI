@@ -1,10 +1,7 @@
 import * as React from "react";
-import { alpha, styled } from "@mui/material/styles";
+import { styled } from "@mui/material/styles";
 import InputBase from "@mui/material/InputBase";
-import Box from "@mui/material/Box";
-import InputLabel from "@mui/material/InputLabel";
 import TextField, { TextFieldProps } from "@mui/material/TextField";
-import FormControl from "@mui/material/FormControl";
 import { OutlinedInputProps } from "@mui/material/OutlinedInput";
 
 const RedditTextField = styled((props: TextFieldProps) => (
@@ -16,7 +13,7 @@ const RedditTextField = styled((props: TextFieldProps) => (
   "& .MuiFilledInput-root": {
     overflow: "hidden",
     borderRadius: 4,
-    backgroundColor: "#F3F6F9",
+    backgroundColor: "#bdbdbd",
     border: "none",
     borderColor: theme.palette.mode === "light" ? "#E0E3E7" : "#2D3843",
     transition: theme.transitions.create([
@@ -28,12 +25,12 @@ const RedditTextField = styled((props: TextFieldProps) => (
     "&.Mui-focused": {
       border: "none",
       outline: "none",
-      backgroundColor: "#F3F6F9",
+      backgroundColor: "#bdbdbd",
     },
     "&.Mui-hover": {
       border: "none",
       outline: "none",
-      backgroundColor: "#F3F6F9",
+      backgroundColor: "#bdbdbd",
     },
   },
 }));
@@ -45,7 +42,7 @@ const BootstrapInput = styled(InputBase)(({ theme }) => ({
   "& .MuiInputBase-input": {
     borderRadius: 4,
     position: "relative",
-    backgroundColor: "#F3F6F9",
+    backgroundColor: "#bdbdbd",
     border: "none",
     fontSize: 16,
     width: "auto",
@@ -58,7 +55,7 @@ const BootstrapInput = styled(InputBase)(({ theme }) => ({
     "&:focus": {
       border: "none",
       outline: "none",
-      backgroundColor: "#F3F6F9",
+      backgroundColor: "#bdbdbd",
     },
   },
 }));

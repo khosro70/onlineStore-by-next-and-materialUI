@@ -12,13 +12,15 @@ import BasketButton from "../modules/homePage/appbar/BasketButton";
 import MenuItems from "../modules/homePage/appbar/MenuItems";
 import DrawerSection from "../modules/homePage/appbar/DrawerSection";
 
-function Header() { 
+function Header() {
   return (
     <AppBar
+      dir="rtl"
       position="sticky"
       sx={{
-        backgroundColor: "rgb(250 250 249 / var(--tw-bg-opacity))",
+        backgroundColor: "rgb(250 250 249)",
         paddingY: 1,
+        marginBottom: 2,
       }}
     >
       <Container maxWidth="xl">
@@ -55,13 +57,13 @@ function Header() {
             <Box
               sx={{
                 alignItems: "center",
-                backgroundColor: "#F3F6F9",
+                backgroundColor: "#bdbdbd",
                 borderRadius: 1,
                 paddingRight: 1,
                 display: { xs: "none", sm: "flex" },
               }}
             >
-              <SearchIcon sx={{ color: "black" }} />
+              <SearchIcon sx={{ color: "black",cursor:"pointer" }} />
               <SearchInput />
             </Box>
             <BasketButton />

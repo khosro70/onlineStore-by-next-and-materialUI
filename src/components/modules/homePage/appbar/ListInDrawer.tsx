@@ -18,7 +18,6 @@ interface ListInDrawerPropsInterface {
 const ListInDrawer: React.FC<ListInDrawerPropsInterface> = ({
   toggleDrawer,
 }) => {
-
   const [opens, setOpens] = React.useState(false);
 
   const handleClick = () => {
@@ -41,7 +40,11 @@ const ListInDrawer: React.FC<ListInDrawerPropsInterface> = ({
         </ListItemButton>
       </ListItem>
       <Collapse in={opens} timeout="auto" unmountOnExit>
-        <List component="div" disablePadding onClick={() => toggleDrawer(false)}>
+        <List
+          component="div"
+          disablePadding
+          onClick={() => toggleDrawer(false)}
+        >
           <ListItemButton sx={{ pr: 8, textAlign: "right" }}>
             <ListItemText
               primary={<Typography variant="body2">لپ تاپ</Typography>}
